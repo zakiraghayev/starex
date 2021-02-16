@@ -3,7 +3,9 @@
 1. clone the repo
 2. create virtual environment by 
   > virtualenv env
-  >source env/bin/activate
+  
+  activate environment created.
+  > source env/bin/activate
 3. install all the requirements for the project by followinf command. 
   > pip install -r requirements.txt 
 
