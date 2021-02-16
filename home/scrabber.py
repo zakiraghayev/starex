@@ -11,7 +11,7 @@ class Scrabber(object):
         self.currency = ' TL' # currency to find tag by 
         self.prices = [] # there could be 3 prices of one product (with discounts*)
         self.status = 0 # 200 OK
-
+        self.hostname = "example.com"
         self.findTagbyCurrency() # automatically start to parse the product price
 
     def is_url(self):

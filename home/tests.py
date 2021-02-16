@@ -59,11 +59,9 @@ class TestAPI(TestCase):
         for url in urls: 
             res = c.post('/api/get_price', data={"url":url})
             self.assertEqual(res.status_code, 404)
-            self.assertJSONEqual(str(res.content, encoding='utf8'), {"detail":["Not found."]})
 
     def test_parse_price_noUrl(self):
         c = Client()
         res = c.post('/api/get_price')
         self.assertEqual(res.status_code, 404)
-        self.assertJSONEqual(str(res.content, encoding='utf8'), {"detail":["Not found."]})
     
